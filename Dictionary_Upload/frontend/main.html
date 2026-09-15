@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad and Osman's Dictionary</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer="true"></script>
+</head>
+<body onload="startDictionary()">
+    <header>
+        <h1>Welcome to Ahmad and Osman's English Dictioanry</h1>
+    </header>
+
+    <main>
+        <audio id="searchSuccessful">
+            <source src="assests/correct.mp3" type="audio/mp3">
+        </audio>
+        <audio id="searchFail">
+            <source src="assests/wrong.mp3" type="audio/mp3">
+        </audio>
+        <audio id="displayAudio">
+            <source type="audio/mp3">
+        </audio>
+
+        <div class="content">
+            <input id="inputWord" type="text" placeholder="Type a Word Here"> 
+            <button id="searchBttn">Search</button>
+            <div class="wordSucess" id="success">
+                <div class="container">
+                    <div id="displayWord"></div>
+                    <div class="audio">
+                        <button id="wordAudio" onclick="playWordAudio()"></button>
+                        <p id="errorAudio">sorry no audio can be played</p>
+                    </div>
+                </div>
+                <div class="holder">
+                    <div id="phoneticWord"></div>
+                    <div id="wordType"></div>
+                </div>
+                <div id="wordDefinition"></div>
+                <div id="exampleSentence"></div>
+                <div id="synonyms"></div>
+                <div id="antonyms"></div>
+            </div>
+            <div class="noWord" id="notFound">
+                <p>Word does not exist in database</p>
+            </div>
+            <div class="wrongInput" id="errorInput">
+                <p>Invalid input. Please have your input be one word comprised of letters from the English alphabet and include no spaces</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.content {
+    margin: auto auto;
+    margin-top: 50px;
+    border: 20px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 55%;
+    min-width: 50%;
+    max-width: 100%;
+    min-height: 80px;
+    color: black;
+
+}
+
+.wordSucess {
+    display: block;
+    
+} 
+
+.noWord {
+    display: block;
+
+}
+
+.wrongInput {
+    display: block;
+}
+
+#notFound {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#errorInput {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+#searchBttn {
+    background-color: black;
+    border-radius: 20%;
+    color: white;
+    margin-left: 10px;
+    height: 40px;
+    width: 60px;
+
+    
+}
+
+
+#wordAudio {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-image: url(assests/speaker-logo.jpg);
+    background-color: black;
+    margin-bottom: 2px;
+}
+
+.audio {
+    margin-top: 20px;
+    margin-left: 60%;
+    margin-bottom: 10px;
+   
+}
+
+#errorAudio {
+    font-size: 12px;
+    align-self: center;
+}
+
+#inputWord {
+    border: none;
+    border-bottom: solid;
+    width:85%;
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#displayWord {
+    margin: 20px 10px 20px 40px;
+    font-size: 40px;
+    max-width: 100px;
+}
+
+#phoneticWord {
+    margin: 10px 0px 40px 20px;
+}
+
+#wordType{
+    margin: 10px 0px 40px 60px;
+}
+
+.container {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    
+}
+
+.holder {
+    display: flex;
+    width: 100%;
+}
+
+#wordDefinition {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+
+#exampleSentence {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+#synonyms {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+#antonyms {
+    margin-left: 5%;
+    padding-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}

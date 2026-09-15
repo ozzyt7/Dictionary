@@ -1,0 +1,63 @@
+Project members:
+
+Name: Shiekh Naurangsar
+Email: osman38@gmail.com 
+
+Name: Ahmad Bilal
+
+External API (database): Free Dictionary API
+url: https://dictionaryapi.dev
+
+
+
+Shiekh’s responsibilities:
+- Create function to display the definition of the word or display that the information could not be found to user
+- Have the audio of word be played when button is clicked or display that the information could not be found to user
+- Create function to display the example sentence of word or display that the information could not be found to user
+- Create function to display the word type or display that the information could not be found to user
+- Create function to display phonetic spelling of word or display that the information could not be found to user
+- Set up backend server and create a function for the input of user to be sent from the frontend to the backend
+- Have the backend recieve the word and make get data from API and send data to frontend
+- Create function to check if the word is defined within the database
+- Display only the specific information needed on the website to the user and hide the others who are not needed
+- Create vitest for functions
+- Help create CSS and HTML
+
+Ahmad’s responsibilities: 
+- Have sucess sound be played if the word is defined in the database
+- Have error sound be played if the word is not defined within the databse or if the input of user is not valid
+- Create function to determine if user's input is valid 
+- Create function to display the word 
+- Create function to display the synonyms of the word or dislpay that the information could not be found
+- Create function to display the antonyms of the word or dislpay that the information could not be found
+- Code event listener for search button
+- Help create CSS and HTML
+
+
+
+Challenges:
+
+Problem with figuring out how to work together remotely since we can't always meet up.
+Solution: We chose to use discord to send files to one another to edit and comment on.
+
+Problem with returning data recieved from API in a function.
+Solution: I talked with my TA from lab, I learned about the await fetch syntax and async functions and used that instead of fetch().then().catch().
+
+Problem with how to set up the backend server since we can call the API from the frontend and dislpay the information on our website.
+Solution: After talking to the TA, I learned I could set up the backend and have the backend make request to the API and then pass the data from the backend to frontend. 
+
+Problem with passing data using fetch from frontend to backend(only opaque responses).
+Solution: After doing reaserach and seeing other people experience the same issue, I learned about the usage of cors and installed cors on our backend server to bypass the browser restrictions.
+
+Problem with error catching using fetch since I'm using await fetch and not fetch().then().catch().
+Solution: After doing reaserach and seeing people use await fetch, I learned about the try and catch syntax used for await fetch data request. 
+
+Problem with updating the src attribute for the audio of the word to be played as the audio element has the src attribute from the data but nothing is being played when button is clicked.
+Solution: After doing reaserach I learned about the load method and how we need to reload the audio element everytime we update the src attribute so that sound can be played. 
+
+
+Our Website:
+We always take the first definition and all information relating to that first definition since words can have multiple varying definitions but we reasoned that if the word is defined within the database it will be guaranteed to have at least one definition, so we always take the first definition.
+There are instances where there can be multiple ways to obtain data for the word and we chose to use the arrays for the most part in determining what data to display to the user for example: in some data sets there is a phonetic key and value and a phonetic array with dictionaries inside with keys and values relating to phonetic spelling and audio mp3 files.
+We chose to always take our phonetic spelling to be displayed to the user from the phonetic array with dictionaries inside since thre are instances when the phonetic key and value aren't always present in the data set. 
+Similarly with synonyms and anytonyms we chose to always display the synonyms and antonyms found in the index of the meaning array not the synonyms and antonyms found in the index of the definition array. 
